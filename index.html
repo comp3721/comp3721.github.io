@@ -7,31 +7,62 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  hr.small {
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: white;
+  }
+
+  a:hover,
+  a:focus {
+    color: #0085A1;
+  }
+  .intro-header {
+    background-color: #777777;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 30px;
+  }
+  </style>
 </head>
 <body>
+
+
+  <header class="intro-header">
+      <div class="container" >
+        <h1>COMP3721 Theory of Computation</h1>
+        <hr>
+        <h3>Tutorials</h3>
+      </div>
+  </header>
+
 <div class="container">
-  <h2>Tutorials</h2>
-  <hr>
+  <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
   <h4>Question Banks</h4>
-  
   <ul class="list-group">
-    <li class="list-group-item"> <a href="Qbank/01qbank.pdf">Question bank #1</a>
-      (<a href="#">Solution</a>)
-    <li class="list-group-item"> <a href="#">Question bank #2</a>
-        (<a href="#">Solution</a>)
-    <li class="list-group-item"> <a href="#">Question bank #3</a>
-  (<a href="#">Solution</a>)
-    <li class="list-group-item"> <a href="#">Question bank #4</a>
-    (<a href="#">Solution</a>)
+    <li class="list-group-item"> <a href="Qbank/01qbank.pdf">Question Bank #1</a> (Solution)
+    <li class="list-group-item"> Question Bank #2 (Solution)
+    <li class="list-group-item"> Question Bank #3 (Solution)
+    <li class="list-group-item"> Question bank #4 (Solution)
   </ul>
   <p>
   These question banks are for your practice; they are not graded.
   Doing these exercises will help you better understand the materials taught in class and prepare for the exams.
+  </p>
+  <p>
   The TA will discuss selected questions from the question banks in the tutorials.
   You may also ask the TA to explain certain questions.
   </p>
   <hr>
-  
+
   <h4>Tutorial Syllabus</h4>
   <table class="table table-hover">
     <thead>
@@ -119,5 +150,8 @@
   </table>
 <hr>
 <p>Acknowledgement: The slides are inherited from previous offerings of the course.</p>
+</div>
+</div>
+</div>
 </body>
 </html>
