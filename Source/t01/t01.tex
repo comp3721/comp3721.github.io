@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+% mathmatical fonts and formulations
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+% float control
+\usepackage{placeins}
+% graphic control
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{xcolor}
+% excercise
+%\usepackage{exercise}
+% Algorithm support
+%\usepackage{algorithmic}
+\usepackage{algorithm2e}
+% Set space
+\usepackage[top=1.54cm,bottom=1.54cm,left=3.18cm,right=2.54cm,includehead,includefoot
+           ]{geometry}
+%color of the word
+\usepackage{color}
+% change the counter of enumerate
+\usepackage{enumerate}
+% allow to use the block
+\usepackage{framed}
+% introduce indent at the beginning of every pragraph
+\usepackage{indentfirst}
+% every section begins at a new page
+%\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\theoremstyle{definition}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{observe}{Observation}[section]
+
+\date{}
+\author{}
+\title{COMP3721 Tutorial 1}
+
+% set the way to number equation
+\numberwithin{equation}{subsection}
+%depth of table of contents
+\setcounter{tocdepth}{2}
+\begin{document}
+\maketitle
+\section{Sets}
+\begin{enumerate}[1.]
+\item Determine whether each of the following is true or false.
+    \begin{enumerate}[(a)]
+        \item $\emptyset \in \emptyset$
+        \item $\emptyset \subseteq \emptyset$
+        \item $\{a,b\}\subseteq \{a,b,\{a,b\}\}$
+        \item $\{a,b\}\in \{a,b,\{a,b\}\}$
+    \end{enumerate}
+\end{enumerate}
+\section{Languages and Regular Expressions}
+\begin{enumerate}[1.]
+\item Show that if $a$ and $b$ are distinct symbols, then $\{a,b\}^* = \{a\}^*(\{b\}\{a\}^*)^*$.
+\item Which of the following are true? Explain.
+    \begin{enumerate}
+        \item $abcd \in (a(cd)^*b)^*$
+        \item $\{a^nb^n : n \geq 0\}\{b^nc^n : n\geq 0\} = \{a^nb^{2n}c^n : n\geq 0\}$
+    \end{enumerate}
+\item Let $\Sigma = \{a, b\}$. Write regular expressions for the following sets:
+    \begin{enumerate}[(a)]
+        \item All strings in $\Sigma^*$ with no more than three $a$'s.
+        \item All strings in $\Sigma^*$ with a number of $a$'s divisible by three.
+        \item All strings in $\Sigma^*$ that does not have $aab$ as a substring.
+    \end{enumerate}
+\item Prove that if $L$ is regular, then so is $L' = \{\textrm{$w$ : $wu \in L$ for some string $u$}\}$.
+\end{enumerate}
+\end{document}
+

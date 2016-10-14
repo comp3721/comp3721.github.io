@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}
+% mathmatical fonts and formulations
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+% float control
+\usepackage{placeins}
+% graphic control
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{xcolor}
+% excercise
+%\usepackage{exercise}
+% Algorithm support
+%\usepackage{algorithmic}
+\usepackage{algorithm2e}
+% Set space
+\usepackage[top=1.54cm,bottom=1.54cm,left=3.18cm,right=2.54cm,includehead,includefoot
+           ]{geometry}
+%color of the word
+\usepackage{color}
+% change the counter of enumerate
+\usepackage{enumerate}
+% allow to use the block
+\usepackage{framed}
+% introduce indent at the beginning of every pragraph
+\usepackage{indentfirst}
+% every section begins at a new page
+%\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\theoremstyle{definition}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{observe}{Observation}[section]
+
+\date{}
+\author{}
+\title{COMP3721 Tutorial 6}
+
+% set the way to number equation
+\numberwithin{equation}{subsection}
+%depth of table of contents
+\setcounter{tocdepth}{2}
+\begin{document}
+\maketitle
+\section{Pumping Theorem for CFL}
+\begin{enumerate}[1.]
+\item For each of the following languages L, state whether L is contextfree or not and justify your
+answer. If context free show a PDA or CFG, if not apply Pumping Lemma for CFL.
+    \begin{enumerate}[(a)]
+        \item \{$a^ib^jc^k$ : $i + j = k, i,j,k \geq 0$\}
+        \item \{$a^ib^ic^{2i}$ : $i \geq 0$\}
+        \item \{$a^ib^jc^k$ : $ j = \max (i,k), i,j,k \geq 0$\}
+    \end{enumerate}
+    
+\end{enumerate}  
+\section{Closure Property for CFL}
+\begin{enumerate}[1.]
+	\item Use closure property of CFG to show that the following languages are context-free.
+	\begin{enumerate}[(a)]
+		\item \{$a^ib^j$ : $i \neq j$\}
+		\item \{$xx^Ryy^Rzz^R$ : $x,y,z \in \{a,b\}^*$\}
+		\item $L-R$, where $L$ is context-free and $R$ is regular.
+	\end{enumerate}
+\end{enumerate}
+\end{document}
+
